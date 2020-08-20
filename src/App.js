@@ -3,21 +3,21 @@ import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/Home/HomePage';
 import SearchPage from './pages/Search/SearchPage';
+import SideBar from './components/SideBar/SideBar';
+import { Container, Row, Col } from 'reactstrap';
 
 function App() { 
   return (
-    <Router>    
-      <div>
-        <h1>Spotify-Clone</h1>
-        <ul className="header">
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/search">Search</NavLink></li>
-        </ul>
-        <div>
-          <Route exact path="/" component={HomePage}></Route>
-          <Route path="/search" component={SearchPage}></Route>
-        </div>
-      </div>
+    <Router>
+      <Container fluid>
+        <Row noGlutters={true}>
+          <Col xs="2"><SideBar /></Col>
+          <Col>
+            <Route exact path="/" component={HomePage}></Route>
+            <Route path="/search" component={SearchPage}></Route>
+          </Col>
+        </Row>
+      </Container>    
     </Router>
   );
 }
