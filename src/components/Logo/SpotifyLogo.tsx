@@ -4,7 +4,7 @@ import './SpotifyLogo.css';
 const SpotifyLogo = () => {
     return (
         <div>
-            <img src="/Spotify_Logo.png" className={"logo"}/>
+            <img src="/images/Spotify_Logo.png" className={"logo"}/>
         </div>);
 }
 
