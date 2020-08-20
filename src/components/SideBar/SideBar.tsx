@@ -5,6 +5,18 @@ const SideBar = () => {
     return (
         <div>
             <SpotifyLogo />
+            <ul>
+                <li>Home</li>
+                <li>Search</li>
+                <li>Library</li>
+            </ul>
+            <div>
+                <span>PLAYLISTS</span>
+                <ul>
+                    <li>Create playlist</li>
+                    <li>Favorite tracks</li>
+                </ul>
+            </div>
         </div>
     );
 }
