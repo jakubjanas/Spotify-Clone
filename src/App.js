@@ -13,8 +13,10 @@ function App() {
         <Row noGlutters={true}>
           <Col xs="2"><SideBar /></Col>
           <Col>
-            <Route exact path="/" component={HomePage}></Route>
-            <Route path="/search" component={SearchPage}></Route>
+            <div className="main-page">
+              <Route exact path="/" component={HomePage}></Route>
+              <Route path="/search" component={SearchPage}></Route>
+            </div>
           </Col>
         </Row>
       </Container>    
