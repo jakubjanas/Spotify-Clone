@@ -1,15 +1,12 @@
 import React from 'react';
 import SpotifyLogo from '../Logo/SpotifyLogo';
+import SideBarNavigation from './SideBarNavigation/SideBarNavigation';
 
 const SideBar = () => {
     return (
         <div>
             <SpotifyLogo />
-            <ul>
-                <li>Home</li>
-                <li>Search</li>
-                <li>Library</li>
-            </ul>
+            <SideBarNavigation />
             <div>
                 <span>PLAYLISTS</span>
                 <ul>
