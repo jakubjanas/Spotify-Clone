@@ -1,8 +1,25 @@
 .navigation {
     list-style-type: none;
+    padding: 0;
+    margin-top:25px;
+}
+
+.navigation li {
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.navigation li:hover {
+    color: white;
+    background-color: #404040;
+}
+
+.navigation li:hover svg {
+    fill: white;
 }
 
 .navigation svg {
     fill: #b3b3b3;
-    margin-right: 10px
+    margin-right: 20px
 }

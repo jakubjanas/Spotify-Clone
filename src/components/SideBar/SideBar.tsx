@@ -1,10 +1,11 @@
 import React from 'react';
 import SpotifyLogo from '../Logo/SpotifyLogo';
 import SideBarNavigation from './SideBarNavigation/SideBarNavigation';
+import './SideBar.css';
 
 const SideBar = () => {
     return (
-        <div>
+        <div className={'sideBar'}>
             <SpotifyLogo />
             <SideBarNavigation />
             <div>
