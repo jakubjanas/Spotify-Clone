@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Container fluid className={'root'}>
-        <Row noGlutters={true}>
+        <Row>
           <Col xs="2"><SideBar /></Col>
           <Col>
             <div className="main-page">
