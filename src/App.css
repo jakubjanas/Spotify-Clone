@@ -3,7 +3,9 @@
 }
 
 .main-page {
-  height: 100vh;
+  height: 91vh;
+  background-color: #121212;
+  color: #494949;
 }
 
 @keyframes App-logo-spin {

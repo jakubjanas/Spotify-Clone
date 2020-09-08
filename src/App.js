@@ -6,11 +6,12 @@ import SearchPage from './pages/Search/SearchPage';
 import SideBar from './components/SideBar/SideBar';
 import { Container, Row, Col } from 'reactstrap';
 import LibraryPage from './pages/Library/LibraryPage';
+import Footer from './components/Footer/Footer';
 
 function App() { 
   return (
     <Router>
-      <Container fluid>
+      <Container fluid className={'root'}>
         <Row noGlutters={true}>
           <Col xs="2"><SideBar /></Col>
           <Col>
@@ -20,6 +21,7 @@ function App() {
               <Route path="/library" component={LibraryPage}></Route>
             </div>
           </Col>
+          <Footer />
         </Row>
       </Container>    
     </Router>
