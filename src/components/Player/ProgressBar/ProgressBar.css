@@ -1,0 +1,13 @@
+.progressBar {
+    height: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    margin: 50px;
+}
+
+.progressFiller {
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: inherit;
+}
