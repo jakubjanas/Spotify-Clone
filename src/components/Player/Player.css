@@ -1,4 +1,45 @@
 .player {
+    margin-top: 10px;
     width: 100%;
     text-align: center;
+}
+
+.player svg {
+    fill: #b3b3b3;
+    margin-right: 20px;
+}
+
+.player svg:hover {
+    fill: white;
+}
+
+.shuffleIcon {
+    height: 15px;
+    width: 15px;
+}
+
+.previousIcon {
+    height: 15px;
+    width: 15px;
+    transform: rotate(180deg);
+}
+
+.repeatIcon {
+    height: 15px;
+    width: 15px;
+}
+
+.playIcon {
+    height: 35px;
+    width: 35px;;
+}
+
+.playIcon:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.nextIcon {
+    height: 15px;
+    width: 15px;
 }
