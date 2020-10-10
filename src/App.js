@@ -21,8 +21,8 @@ function App() {
               <Route path="/library" component={LibraryPage}></Route>
             </div>
           </Col>
-          <Footer />
         </Row>
+          <Footer />
       </Container>    
     </Router>
   );
