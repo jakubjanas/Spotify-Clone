@@ -19,16 +19,6 @@
     transform: rotate(180deg);
 }
 
-.playIcon {
-    height: 35px;
-    width: 35px;;
-}
-
-.playIcon:hover {
-    height: 40px;
-    width: 40px;
-}
-
 .nextIcon {
     height: 15px;
     width: 15px;
