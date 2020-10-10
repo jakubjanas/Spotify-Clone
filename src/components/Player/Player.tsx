@@ -14,7 +14,7 @@ const Player = () => {
             <PlayButton />
             <NextIcon className={'nextIcon'}/>
             <RepeatButton />
-            {/* <ProgressBar /> */}
+            <ProgressBar />
         </div>
     );
 }

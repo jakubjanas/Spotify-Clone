@@ -8,7 +8,7 @@ import { Row, Col } from 'reactstrap';
 
 const Footer = () => {
     return (
-        <Row>
+        <Row noGutters={true}>
             <Col xs="3">
                 <CurrentSong />
             </Col>
