@@ -18,6 +18,14 @@
     width: 15px;
 }
 
+.repeatIcon.Repeat {
+    fill: #24994c;
+}
+
+.repeatIcon.RepeatOnce {
+    fill: rebeccapurple;
+}
+
 .playIcon {
     height: 35px;
     width: 35px;;
