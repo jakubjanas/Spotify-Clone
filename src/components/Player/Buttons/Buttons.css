@@ -1,16 +1,10 @@
-.player {
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
+.shuffleIcon {
+    height: 15px;
+    width: 15px;
 }
 
-.player svg {
-    fill: #b3b3b3;
-    margin-right: 20px;
-}
-
-.player svg:hover {
-    fill: white;
+.shuffleIcon.active {
+    fill: #24994c;
 }
 
 .previousIcon {
