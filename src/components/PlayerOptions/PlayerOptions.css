@@ -1,3 +1,7 @@
 .playerOptions {
     text-align: right;
 }
+.playerOptions svg {
+    margin-right: 5px;
+    height: 15px;
+}
