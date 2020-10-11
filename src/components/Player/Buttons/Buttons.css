@@ -32,6 +32,5 @@
 }
 
 .playIcon:hover {
-    height: 40px;
-    width: 40px;
+    transform: scale(1.1);
 }
