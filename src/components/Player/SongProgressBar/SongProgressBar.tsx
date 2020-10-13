@@ -1,8 +1,9 @@
 import React from 'react';
-import './ProgressBar.css';
+import './SongProgressBar.css';
 import { Row, Col } from 'reactstrap';
+import ProgressBar from '../../ProgressBar/ProgressBar';
 
-const ProgressBar = () => {
+const SongProgressBar = () => {
     const completed = 75;
     return (
         <Row>
@@ -10,9 +11,7 @@ const ProgressBar = () => {
                 <span>2:27</span>
             </div>
             <Col>
-                <div className={'progressBar'}>
-                    <div className={'progressFiller'} style={{width:`${completed}%`}}></div>
-                </div>
+                <ProgressBar completed={completed} />
             </Col>
             <div className={'time'}>
                 <span>3:15</span>
@@ -21,4 +20,4 @@ const ProgressBar = () => {
     );
 }
 
-export default ProgressBar;
+export default SongProgressBar;

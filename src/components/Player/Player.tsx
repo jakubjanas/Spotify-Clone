@@ -1,7 +1,7 @@
 import React from 'react';
 import './Player.css';
 import { ReactComponent as NextIcon } from '../../assets/icons/nextIcon.svg';
-import ProgressBar from './ProgressBar/ProgressBar';
+import SongProgressBar from './SongProgressBar/SongProgressBar';
 import ShuffleButton from './Buttons/ShuffleButton';
 import RepeatButton from './Buttons/RepeatButton';
 import PlayButton from './Buttons/PlayButton';
@@ -14,7 +14,7 @@ const Player = () => {
             <PlayButton />
             <NextIcon className={'nextIcon'}/>
             <RepeatButton />
-            <ProgressBar />
+            <SongProgressBar />
         </div>
     );
 }
