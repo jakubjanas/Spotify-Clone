@@ -15,7 +15,7 @@ const Footer = () => {
             <Col xs="6">
             <   Player />
             </Col>
-            <Col>
+            <Col xs="3">
                 <PlayerOptions />
             </Col>
         </Row>
