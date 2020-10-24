@@ -1,6 +1,6 @@
 import React from 'react';
 import './SongProgressBar.css';
-import { Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 import ProgressBar from '../../ProgressBar/ProgressBar';
 
 const SongProgressBar = () => {

@@ -1,7 +1,7 @@
 .playerOptions {
     text-align: right;
     height: 100%;
-    display: inline-flex;
+    display: flex;
 }
 .playerOptions svg {
     height: 15px;
