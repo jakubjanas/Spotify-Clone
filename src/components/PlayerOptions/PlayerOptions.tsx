@@ -1,14 +1,14 @@
 import React from 'react';
 import './PlayerOptions.css';
-import { ReactComponent as PlaylistIcon } from '../../assets/icons/playlistIcon.svg';
+import Playlist from './Buttons/Playlist';
 import { ReactComponent as WorkstationIcon } from '../../assets/icons/workstationIcon.svg';
-import Volume from './Volume/Volume';
+import Volume from './Buttons/Volume';
 
 
 const PlayerOptions = () => {
     return (
         <div className={'playerOptions'}>
-            <PlaylistIcon />
+            <Playlist />
             <WorkstationIcon />
             <Volume />
         </div>

@@ -1,0 +1,17 @@
+.volume {
+    display: inline-flex;
+    width: 100%;
+}
+
+.volume:hover .progressBarFiller {
+    background-color: #00db4c;
+}
+
+.regulator {
+    width: 100%;
+}
+
+.playlistIcon.active {
+    fill: #00db4c;
+}
+

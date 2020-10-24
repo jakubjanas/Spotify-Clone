@@ -1,7 +1,7 @@
 import React from 'react';
 import ProgressBar from '../../ProgressBar/ProgressBar';
 import { ReactComponent as FullVolumeIcon } from '../../../assets/icons/fullVolumeIcon.svg';
-import './Volume.css';
+import './Buttons.css';
 
 const Volume = () => {
     const completed = 20;
