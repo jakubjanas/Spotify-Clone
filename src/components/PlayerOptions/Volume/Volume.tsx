@@ -9,7 +9,7 @@ const Volume = () => {
     return (
         <div className={'volume'}>
             <FullVolumeIcon />
-            <div>
+            <div className={'regulator'}>
                 <ProgressBar completed={completed} />
             </div>
         </div>
