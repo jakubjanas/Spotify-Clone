@@ -4,3 +4,7 @@
     font-size: 11px;
     margin: auto;
 }
+
+.songBar {
+    display: flex;
+}

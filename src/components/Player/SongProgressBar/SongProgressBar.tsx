@@ -6,7 +6,7 @@ import ProgressBar from '../../ProgressBar/ProgressBar';
 const SongProgressBar = () => {
     const completed = 75;
     return (
-        <Row>
+        <div className={'songBar'}>
             <div className={'time'}>
                 <span>2:27</span>
             </div>
@@ -16,7 +16,7 @@ const SongProgressBar = () => {
             <div className={'time'}>
                 <span>3:15</span>
             </div>
-        </Row>
+        </div>
     );
 }
 
