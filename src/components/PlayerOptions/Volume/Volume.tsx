@@ -1,16 +1,18 @@
 import React from 'react';
 import ProgressBar from '../../ProgressBar/ProgressBar';
 import { ReactComponent as FullVolumeIcon } from '../../../assets/icons/fullVolumeIcon.svg';
-import { Col, Row } from 'reactstrap';
+import './Sound.css';
 
-const Sound = () => {
+const Volume = () => {
     const completed = 20;
 
     return (
-        <div>
+        <div className={'sound'}>
             <FullVolumeIcon />
-            <ProgressBar completed={completed} />
+            <div>
+                <ProgressBar completed={completed} />
+            </div>
         </div>
     )
 }
-export default Sound;
+export default Volume;
