@@ -5,12 +5,12 @@
     margin: 10% 0 0 50px;
 }
 
-.playerOptions svg {
+.playerOptions .icon {
     height: 15px;
     margin: 5px 0 0 20px;
     opacity: 70%;
 }
 
-.playerOptions svg:hover {
+.playerOptions .icon:hover {
     opacity: 100%;
 }

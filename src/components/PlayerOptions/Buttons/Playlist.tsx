@@ -3,7 +3,7 @@ import { ReactComponent as PlaylistIcon } from '../../../assets/icons/playlistIc
 
 const Playlist = () => {
     const [isClicked, setIsClicked] = useState(false);
-    const cssClass = `playlistIcon ${isClicked ? 'active' : ''}`;
+    const cssClass = `icon playlistIcon ${isClicked ? 'active' : ''}`;
     
     return (
         <PlaylistIcon className={cssClass} onClick={() => setIsClicked(prevState => !prevState)}/>

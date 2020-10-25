@@ -9,7 +9,7 @@ const PlayerOptions = () => {
     return (
         <div className={'playerOptions'}>
             <Playlist />
-            <WorkstationIcon />
+            <WorkstationIcon className={'icon'}/>
             <Volume />
         </div>
     );

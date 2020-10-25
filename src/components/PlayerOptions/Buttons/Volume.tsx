@@ -8,7 +8,7 @@ const Volume = () => {
 
     return (
         <div className={'volume'}>
-            <FullVolumeIcon />
+            <FullVolumeIcon className={'icon'}/>
             <div className={'regulator'}>
                 <ProgressBar completed={completed} />
             </div>
