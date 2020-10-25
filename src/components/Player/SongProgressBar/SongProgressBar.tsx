@@ -4,7 +4,7 @@ import { Col } from 'reactstrap';
 import ProgressBar from '../../ProgressBar/ProgressBar';
 
 const SongProgressBar = () => {
-    const completed = 75;
+    const completed = 100;
     return (
         <div className={'songBar'}>
             <div className={'time'}>

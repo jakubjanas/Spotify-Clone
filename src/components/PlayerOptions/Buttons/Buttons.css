@@ -3,8 +3,11 @@
     width: 100%;
 }
 
-.volume:hover .progressBarFiller {
+.volume:hover > .regulator .progressBar .progressFiller {
     background-color: #00db4c;
+}
+.volume:hover > .regulator .progressBar svg {
+    width: 10px;
 }
 
 .regulator {

@@ -3,10 +3,24 @@
     background-color: #5A5A5A;
     border-radius: 50px;
     margin: 10px;
+    display: flex;
 }
 
 .progressFiller {
     height: 100%;
     background-color: #b3b3b3;
     border-radius: inherit;
+}
+
+.progressBar:hover > svg {
+    width: 10px;
+}
+
+.progressBar:hover > .progressFiller {
+    background-color: #00db4c;
+}
+
+.progressBar svg {
+    margin: -3px 0 0 0;
+    width: 0;
 }
