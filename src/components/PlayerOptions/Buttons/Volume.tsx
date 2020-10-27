@@ -27,7 +27,7 @@ const Volume = () => {
         <div className={'volume'}>
             <FullVolumeIcon className={'icon'} onClick={() => setStatus(prev => !prev)}/>
             <div className={'regulator'}>
-                <ProgressBar completed={value} />
+                <ProgressBar completed={value} setCompleted={setVolumeValue}/>
             </div>
         </div>
     )
