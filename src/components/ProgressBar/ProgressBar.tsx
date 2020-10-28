@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './ProgressBar.css';
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
 	setCompleted: (value: number) => void;
 };
 
-const ProgressBar = ({ completed, setCompleted }: Props) => {
+export const ProgressBar = ({ completed, setCompleted }: Props) => {
 	const refP = useRef<HTMLDivElement>(null);
 
 	const handleOnClick = (e: React.MouseEvent) => {
@@ -28,5 +28,3 @@ const ProgressBar = ({ completed, setCompleted }: Props) => {
 		</div>
 	);
 };
-
-export default ProgressBar;

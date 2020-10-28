@@ -5,14 +5,27 @@ import { ReactComponent as LibraryIcon } from '../../../assets/icons/libraryIcon
 import './SideBarNavigation.css';
 import { NavLink } from 'react-router-dom';
 
-const SideBarNavigation = () => {
-    return (
-        <ul className={'navigation'}>
-            <NavLink to="/"><li><HomeIcon />Home</li></NavLink>
-            <NavLink to="/search"><li><SearchIcon />Search</li></NavLink>
-            <NavLink to="/library"><li><LibraryIcon />Library</li></NavLink>
-            </ul>
-    );
-}
-
-export default SideBarNavigation;
+export const SideBarNavigation = () => {
+	return (
+		<ul className={'navigation'}>
+			<NavLink to='/'>
+				<li>
+					<HomeIcon />
+					Home
+				</li>
+			</NavLink>
+			<NavLink to='/search'>
+				<li>
+					<SearchIcon />
+					Search
+				</li>
+			</NavLink>
+			<NavLink to='/library'>
+				<li>
+					<LibraryIcon />
+					Library
+				</li>
+			</NavLink>
+		</ul>
+	);
+};

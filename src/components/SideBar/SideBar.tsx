@@ -1,22 +1,20 @@
 import React from 'react';
-import SpotifyLogo from '../Logo/SpotifyLogo';
-import SideBarNavigation from './SideBarNavigation/SideBarNavigation';
+import { SpotifyLogo } from '../Logo';
+import { SideBarNavigation } from './SideBarNavigation';
 import './SideBar.css';
 
-const SideBar = () => {
-    return (
-        <div className={'sideBar'}>
-            <SpotifyLogo />
-            <SideBarNavigation />
-            <div>
-                <span>PLAYLISTS</span>
-                <ul>
-                    <li>Create playlist</li>
-                    <li>Favorite tracks</li>
-                </ul>
-            </div>
-        </div>
-    );
-}
-
-export default SideBar;
+export const SideBar = () => {
+	return (
+		<div className={'sideBar'}>
+			<SpotifyLogo />
+			<SideBarNavigation />
+			<div>
+				<span>PLAYLISTS</span>
+				<ul>
+					<li>Create playlist</li>
+					<li>Favorite tracks</li>
+				</ul>
+			</div>
+		</div>
+	);
+};
