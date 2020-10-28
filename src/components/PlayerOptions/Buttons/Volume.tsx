@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProgressBar from '../../ProgressBar/ProgressBar';
 import { ReactComponent as FullVolumeIcon } from '../../../assets/icons/fullVolumeIcon.svg';
+import { ReactComponent as MinVolumeIcon } from '../../../assets/icons/minVolumeIcon.svg';
 import './Buttons.css';
 
 const Volume = () => {
@@ -23,9 +24,13 @@ const Volume = () => {
         setValue(value);
     }
 
+    const volumeIcon = value == 0 ? 
+        <MinVolumeIcon className={'icon'} onClick={() => setStatus(prev => !prev)}/> : 
+        <FullVolumeIcon className={'icon'} onClick={() => setStatus(prev => !prev)}/>
+
     return (
         <div className={'volume'}>
-            <FullVolumeIcon className={'icon'} onClick={() => setStatus(prev => !prev)}/>
+            {volumeIcon}
             <div className={'regulator'}>
                 <ProgressBar completed={value} setCompleted={setVolumeValue}/>
             </div>
