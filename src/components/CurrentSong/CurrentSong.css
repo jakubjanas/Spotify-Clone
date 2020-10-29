@@ -1,10 +1,42 @@
 .currentSong {
 	display: flex;
+	margin-top: 20px;
 }
 
 .songCover {
-	margin: 20px;
-	min-width: 75px;
-	min-height: 75px;
+	margin: 0 20px 0 0;
+	min-width: 50px;
+	min-height: 50px;
 	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.songInfo {
+	width: 70%;
+	margin-top: 5px;
+}
+
+.title {
+	font-size: 15px;
+	font-weight: 600;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.title:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.author {
+	font-size: 12px;
+	overflow: hidden;
+	color: #b3b3b3;
+}
+
+.author:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #ffffff;
 }

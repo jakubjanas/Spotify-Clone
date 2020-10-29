@@ -6,10 +6,12 @@ export const CurrentSong = () => {
 	return (
 		<div className={'currentSong'}>
 			<div className={'songCover'}>
-				<CdIcon />
+				<CdIcon height={'50px'} width={'50px'} opacity={'90%'} />
 			</div>
-			<div>Song name</div>
-			<div>icons</div>
+			<div className={'songInfo'}>
+				<div className={'title'}>Song title</div>
+				<div className={'author'}>Author</div>
+			</div>
 		</div>
 	);
 };
