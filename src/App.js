@@ -9,7 +9,7 @@ import { Footer } from './components/Footer';
 function App() {
 	return (
 		<Router>
-			<Container fluid className={'root'}>
+			<Container fluid>
 				<Row>
 					<Col xs='2'>
 						<SideBar />
