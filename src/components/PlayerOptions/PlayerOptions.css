@@ -1,16 +1,15 @@
 .playerOptions {
-    text-align: right;
-    height: 100%;
-    display: flex;
-    margin: 10% 0 0 50px;
+	text-align: right;
+	display: flex;
+	margin: 10% 0 0 50px;
 }
 
 .playerOptions .icon {
-    height: 15px;
-    margin: 5px 0 0 20px;
-    opacity: 70%;
+	height: 15px;
+	margin: 5px 0 0 20px;
+	opacity: 70%;
 }
 
 .playerOptions .icon:hover {
-    opacity: 100%;
+	opacity: 100%;
 }

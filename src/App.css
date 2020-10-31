@@ -1,18 +1,18 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .main-page {
-  height: 91vh;
-  background-color: #121212;
-  color: #494949;
+	height: 90vh;
+	background-color: #121212;
+	color: #494949;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
