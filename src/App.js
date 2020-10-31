@@ -9,21 +9,19 @@ import { Footer } from './components/Footer';
 function App() {
 	return (
 		<Router>
-			<Container fluid>
-				<Row>
-					<Col xs='2'>
-						<SideBar />
-					</Col>
-					<Col>
-						<div className='main-page'>
-							<Route exact path='/' component={HomePage}></Route>
-							<Route path='/search' component={SearchPage}></Route>
-							<Route path='/library' component={LibraryPage}></Route>
-						</div>
-					</Col>
-				</Row>
-				<Footer />
-			</Container>
+			<Row noGutters>
+				<Col xs='2'>
+					<SideBar />
+				</Col>
+				<Col>
+					<div className='main-page'>
+						<Route exact path='/' component={HomePage}></Route>
+						<Route path='/search' component={SearchPage}></Route>
+						<Route path='/library' component={LibraryPage}></Route>
+					</div>
+				</Col>
+			</Row>
+			<Footer />
 		</Router>
 	);
 }
