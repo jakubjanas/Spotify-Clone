@@ -1,26 +1,30 @@
 .progressBar {
-    height: 3px;
-    background-color: #5A5A5A;
-    border-radius: 50px;
-    margin: 10px;
-    display: flex;
+	height: 3px;
+	background-color: #5a5a5a;
+	border-radius: 50px;
+	margin: 10px;
+	display: flex;
+}
+
+.progressBar:hover {
+	cursor: pointer;
 }
 
 .progressFiller {
-    height: 100%;
-    background-color: #b3b3b3;
-    border-radius: inherit;
+	height: 100%;
+	background-color: #b3b3b3;
+	border-radius: inherit;
 }
 
 .progressBar:hover > svg {
-    width: 10px;
+	width: 10px;
 }
 
 .progressBar:hover > .progressFiller {
-    background-color: #00db4c;
+	background-color: #00db4c;
 }
 
 .progressBar svg {
-    margin: -3px 0 0 0;
-    width: 0;
+	margin: -3px 0 0 0;
+	width: 0;
 }
