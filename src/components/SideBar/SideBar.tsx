@@ -6,8 +6,12 @@ import './SideBar.css';
 export const SideBar = () => {
 	return (
 		<div className={'sideBar'}>
-			<SpotifyLogo />
-			<SideBarNavigation />
+			<div className={'logo'}>
+				<SpotifyLogo />
+			</div>
+			<div className={'navigationBar'}>
+				<SideBarNavigation />
+			</div>
 			<div>
 				<span>PLAYLISTS</span>
 				<ul>
