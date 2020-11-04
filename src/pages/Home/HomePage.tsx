@@ -1,9 +1,12 @@
 import React from 'react';
+import { Layout } from '../Layout/Layout';
 
 export const HomePage = () => {
 	return (
-		<div>
-			<h2>Home</h2>
-		</div>
+		<Layout>
+			<div>
+				<h2>Home</h2>
+			</div>
+		</Layout>
 	);
 };

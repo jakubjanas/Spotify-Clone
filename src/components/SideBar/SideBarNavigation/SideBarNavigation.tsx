@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 export const SideBarNavigation = () => {
 	return (
 		<ul className={'navigation'}>
-			<NavLink exact={true} activeClassName={'is-active'} to='/'>
+			<NavLink exact={true} activeClassName={'is-active'} to='/home'>
 				<li>
 					<HomeIcon />
 					Home

@@ -1,9 +1,12 @@
 import React from 'react';
+import { Layout } from '../Layout/Layout';
 
 export const LibraryPage = () => {
 	return (
-		<div>
-			<h2>Library</h2>
-		</div>
+		<Layout>
+			<div>
+				<h2>Library</h2>
+			</div>
+		</Layout>
 	);
 };
