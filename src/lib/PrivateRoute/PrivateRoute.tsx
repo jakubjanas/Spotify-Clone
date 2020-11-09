@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Redirect, Route, RouteProps } from 'react-router-dom';
 import { AuthenticateContext } from '../Authenticate/AuthenticateContext';
 
@@ -20,13 +20,9 @@ const PrivateRoute = ({
 const AuthenticatedPrivateRoute = ({
 	...props
 }: AuthenticatedPricateRouteProps) => {
-	return (
-		<AuthenticateContext.Consumer>
-			{(isAuthenticated) => (
-				<PrivateRoute {...props} isAuthenticated={isAuthenticated} />
-			)}
-		</AuthenticateContext.Consumer>
-	);
+	const isAuthenticated = useContext(AuthenticateContext);
+
+	return <PrivateRoute {...props} isAuthenticated={isAuthenticated} />;
 };
 
 type PrivateRouteProps = {
