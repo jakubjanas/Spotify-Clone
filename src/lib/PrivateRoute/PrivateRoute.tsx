@@ -1,17 +1,22 @@
-import React, { useContext } from 'react';
+import React, { Component, useContext } from 'react';
 import { Redirect, Route, RouteProps } from 'react-router-dom';
 import { AuthenticateContext } from '../Authenticate/AuthenticateContext';
 
 const PrivateRoute = ({
 	children,
 	isAuthenticated,
-	...props
+	component,
+	...rest
 }: PrivateRouteProps) => {
 	return (
 		<Route
-			{...props}
-			render={() =>
-				isAuthenticated ? children : <Redirect to={'/unathorize'} />
+			{...rest}
+			render={(props) =>
+				isAuthenticated ? (
+					<Component {...props} />
+				) : (
+					<Redirect to={'/unathorize'} />
+				)
 			}
 		/>
 	);
