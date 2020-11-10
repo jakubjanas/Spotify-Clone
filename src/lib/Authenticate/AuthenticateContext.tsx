@@ -9,11 +9,3 @@ export const AuthenticateProvider = (children: JSX.Element) => {
 		</AuthenticateContext.Provider>
 	);
 };
-
-export const AuthenticateConsumer = (childrens: React.ReactNode) => {
-	return (
-		<AuthenticateContext.Consumer>
-            {value => <>}
-		</AuthenticateContext.Consumer>
-	);
-};
